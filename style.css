@@ -1,0 +1,165 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0b0b12;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #11111b;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: #a78bfa;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+a {
+  color: #c4b5fd;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  background: radial-gradient(
+    circle at top,
+    #252044,
+    #0b0b12 65%
+  );
+}
+
+.tag {
+  color: #a78bfa;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 8vw, 70px);
+  margin: 15px 0;
+}
+
+.hero h1 span {
+  color: #a78bfa;
+}
+
+.hero h2 {
+  color: #d1d5db;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 550px;
+  color: #aaa;
+}
+
+.btn {
+  display: inline-block;
+  background: #8b5cf6;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+
+.btn:hover {
+  background: #7c3aed;
+}
+
+section {
+  padding: 80px 10%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 32px;
+  color: #a78bfa;
+  margin-bottom: 25px;
+}
+
+section p {
+  color: #bbb;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills span, .project {
+  background: #171725;
+  border: 1px solid #302c48;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project {
+  margin: 15px 0;
+}
+
+.project h3 {
+  color: white;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+footer {
+  background: #11111b;
+  text-align: center;
+  padding: 25px;
+  color: #888;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  section {
+    padding: 55px 7%;
+  }
+}
